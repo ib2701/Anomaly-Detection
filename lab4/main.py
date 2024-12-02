@@ -1,17 +1,14 @@
 import matplotlib.pyplot as plt
-from mpl_toolkits.mplot3d import Axes3D
 from pyod.utils import standardizer
-from pyod.utils.data import generate_data
 import scipy.io
 from pyod.models.ocsvm import OCSVM
 from pyod.models.deep_svdd import DeepSVDD
 from sklearn.metrics import confusion_matrix, roc_auc_score
-import numpy as np
 from sklearn.svm import OneClassSVM
 from sklearn.model_selection import GridSearchCV, train_test_split
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import StandardScaler
-from sklearn.metrics import make_scorer, balanced_accuracy_score
+from sklearn.metrics import make_scorer
 from pyod.utils.data import generate_data
 
 # Exercise 1
